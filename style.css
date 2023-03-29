@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+:root{
+     --couleur:#d33bfd;
+}
+body{
+     font-family: 'montserrat',sans-serif;
+     margin: 0;
+     color: white;
+}
+header{
+     background-color: #341b47;
+}
+header nav{
+     padding: 30px 5% 0 5%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+ }
+header nav img{
+     width: 230px;
+}
+header nav h1{
+     margin: 0;
+     text-transform: uppercase;
+     color:var(--couleur);
+}
+header nav .right{
+     display: flex;
+     align-items: center;
+}
+header nav .right p{
+     margin:  0 15px 0 0;
+     color:#ccc;
+     cursor: pointer;
+}
+header nav .right p:hover{
+     color: white;
+}
+header nav .right button{
+     padding: 5px 15px;
+     font-size: 18px;
+     background-color: inherit;
+     border: 1px solid var(--couleur);
+     color: var(--couleur);
+     border-radius: 5px;
+     cursor: pointer;
+     transition: color 05s, background-color 0.5s;
+}
+header nav .right button:hover{
+     color: inherit;
+     background-color: var(--couleur);
+}
+.presentation{
+     position: relative;
+     padding:30px 5% ;
+     margin-top:3% ;
+     display: flex;
+     justify-content: space-between;
+}
+.presentation .produit-presentation{
+     width: 60%;
+     flex-shrink: 3; 
+}
+.presentation .produit-presentation h1{
+     margin: 0;
+     font-size: 4vw;
+}
+.presentation .produit-presentation p{
+     font-weight: 300;
+     color: #eae4e4;
+     display: flex;
+     align-items: center;
+}
+.presentation .produit-presentation button{
+     margin-top: 20px;
+     padding: 15px 20px;
+     font-size: 15px;
+     border-radius: 10px;
+     border: none;
+     outline: none;
+     cursor: pointer;
+}
+
+.first .produit-presentation button{
+     background-color:var(--couleur) ;
+     color: white;
+     border: 1px solid var(--couleur);
+     transition: background-color 0.5s,color 0.5s;
+}
+
+.first .produit-presentation button:hover{
+     background-color: inherit;
+     color: var(--couleur);
+}
+.produit-presentation .small-images{
+     margin-top:30px;
+     display: flex;
+     align-items: center;
+}
+
+.produit-presentation .small-images{
+     margin-top:30px;
+     display: flex;
+}
+.first .produit-presentation .small-images .small {
+     padding: 10px;
+     background-color: #33314d;
+     margin: 0 15px 15px 0;
+     border-radius: 20px;
+     transition:filter 05s,;
+}
+.first .produit-presentation .small-images .small:hover{
+     filter: brightness(60%);
+}
+.first .produit-presentation .small-images .small img{
+     width: 200px;
+     height:200px;
+
+}
+.second{
+     margin: 0;
+     background-color: #13181d;
+}
+.second .produit-presentation .new{
+     color: var(--couleur);
+}
+.second .produit-presentation button{
+     background-color: inherit;
+     border: 1px solid var(--couleur);
+     color: var(--couleur);
+     transition:background-color 0.5s;
+}
+.second .produit-presentation button:hover{
+     background-color: var(--couleur);
+     color: white;
+ }
+ .presentation .image-presentation_i1{
+     margin: 30px;
+     width: 45%;
+ }
+ .presentation .image-presentation_i1 img {
+    width: 100%;
+     height: 300px;
+ }
+ .presentation .image-presentation_i2{
+     width: 40%;
+
+ }
+.image-presentation_i2 img {
+     width: 100%;
+      height: 300px;
+  }
+footer{
+     margin: 0;
+     background-color: #13181d;
+     display: flex;
+     flex-wrap: wrap;
+     padding: 20px;
+     justify-content: space-around;
+}
+@media screen and(max-width:500px) {
+     header nav .right p{
+          display: none;
+     }
+     .presentation .produit-presentation h1{
+          font-size: 2em;
+     }
+     .presentation .image-presentation{
+          display: none;
+     }
+     .first .produit-presentation .small-images .small img{
+          width: 70px;
+     }
+}
+.reseau{
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     top: 0;
+     right: 0;
+     bottom: 0;
+}
+.social {
+     padding: 10px;
+}
